@@ -38,6 +38,7 @@
     "nodemon": "^3.1.4"
   },
   "dependencies": {
+    "pg": "^8.5.1",
     "discord.js": "^14.15.3",
     "node-fetch": "^2.6.7"
   }
