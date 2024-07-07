@@ -16,5 +16,8 @@ module.exports = {
     publicKey,
     token,
     dbUser,
-    dbPassword
+    dbPassword,
+    database,
+    guildTable,
+    settingsTable,
 }
