@@ -1,0 +1,43 @@
+{
+  "name": "aquos",
+  "version": "1.0.0",
+  "description": "An open source Roblox => Discord bot that utilizes the Aquarius service as it's backend.",
+  "homepage": "https://aquarius.conmmander.app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=\".env\" index.js",
+    "debug": "nodemon --env-file=\".env.test\" index.js"
+  },
+  "keywords": [
+    "aquarius",
+    "aquos",
+    "discord",
+    "roblox",
+    "bot"
+  ],
+  "contributors": [
+    {
+      "name": "Conmmander",
+      "email": "ryan@ryandodd.org",
+      "url": "https://ryandodd.org",
+      "role": "Creator"
+    }
+  ],
+  "engines": {
+    "npm": "^10.7.0",
+    "node": "^20.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Conmmander/aquos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Conmmander/aquos/issues"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.3"
+  }
+}
