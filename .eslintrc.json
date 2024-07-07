@@ -1,0 +1,129 @@
+{
+  "extends": [
+    "airbnb/base"
+  ],
+  "plugins": ["import"],
+  "settings": {},
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "rules": {
+    "no-restricted-globals": "off",
+    "no-use-before-define": "off",
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "no-useless-constructor": "off",
+    "no-console": "off",
+    "no-plusplus": "off",
+    "max-classes-per-file": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-cycle": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          [
+            "builtin",
+            "external",
+            "internal"
+          ],
+          [
+            "parent",
+            "sibling",
+            "index"
+          ]
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ],
+
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "all",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "quotes": [
+      "error",
+      "double",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "space-before-function-paren": [
+      "error",
+      "always"
+    ],
+    // Play nice with import/order, import/order sorts groups (as well as "internally" alphabetically) while sort-imports sorts member imports
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true
+      }
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "multiline": true,
+        "minProperties": 4
+      }
+    ],
+    "object-property-newline": [
+      "error",
+      {
+        "allowMultiplePropertiesPerLine": false
+      }
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "function-paren-newline": [
+      "error",
+      "consistent"
+    ],
+    "no-restricted-syntax": [
+      "error",
+      "ForInStatement",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "no-empty-function": [
+      "error",
+      {
+        "allow": [
+          "constructors"
+        ]
+      }
+    ],
+    "linebreak-style": ["error", "windows"],
+    "max-len": [
+      "error",
+      120,
+      2,
+      {
+        "ignoreUrls": true,
+        "ignoreComments": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ]
+  }
+}
