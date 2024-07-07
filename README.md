@@ -18,6 +18,8 @@ Format your .env and .env.test like below, taking care to fill in the bracketed 
 applicationID=<applicationIDRemoveBrackets>
 publicKey=<publicKeyRemoveBrackets>
 token=<tokenRemoveBrackets>
+dbUser=<databaseUserRemoveBrackets>
+dbPassword=<databaseUserPasswordRemoveBrackets>
 ```
 
 ### Running the bot
